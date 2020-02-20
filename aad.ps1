@@ -1,6 +1,3 @@
-# Use AzureAD Preview for Mac/Linux Dev
-Import-Module AzureAD.Standard
-
 $requiredUserConfiguration = New-Object 'System.Collections.ArrayList'
 $requiredUserGroups = @{}
 
