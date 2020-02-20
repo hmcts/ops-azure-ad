@@ -3,7 +3,7 @@ param (
     $GroupConfigPath
 )
 
-requiredUserConfiguration = New-Object 'System.Collections.ArrayList'
+$requiredUserConfiguration = New-Object 'System.Collections.ArrayList'
 $requiredUserGroups = @{}
 
 #$currentUserConfiguration = New-Object -TypeName System.Collections.ArrayList
