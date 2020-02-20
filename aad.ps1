@@ -9,10 +9,10 @@ $requiredUserGroups = @{}
 #$currentUserConfiguration = New-Object -TypeName System.Collections.ArrayList
 
 Write-Output "Reading desired Azure Active Directory Configuration" 
-Write-Output "Processing user configuration files from $userConfigPath"
-Write-Output "Processing group configuration files from $groupConfigPath `n"
+Write-Output "Processing user configuration files from $UserConfigPath"
+Write-Output "Processing group configuration files from $GroupConfigPath `n"
 
-Get-ChildItem $userConfigPath -Filter *.json |
+Get-ChildItem $UserConfigPath -Filter *.json |
 Foreach-Object {
     $filename = $_.Name
     Write-Output "Found config file $filename `n" 
