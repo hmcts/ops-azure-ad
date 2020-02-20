@@ -1,10 +1,11 @@
-$requiredUserConfiguration = New-Object 'System.Collections.ArrayList'
-$requiredUserGroups = @{}
-
 param (
     $UserConfigPath,
     $GroupConfigPath
 )
+
+requiredUserConfiguration = New-Object 'System.Collections.ArrayList'
+$requiredUserGroups = @{}
+
 #$currentUserConfiguration = New-Object -TypeName System.Collections.ArrayList
 
 Write-Output "Reading desired Azure Active Directory Configuration" 
